@@ -4,12 +4,16 @@ body {
 }
 
 h1 {
+  text-align: center;
   font-weight: 700;
   font-size: 34px;
   line-height: 1.5;
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   background-color: white;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
@@ -80,4 +84,8 @@ img {
   border: 1px solid rgba(39, 33, 66, 0.5);
   border-radius: 10px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+
+.fact strong {
+  color: #8a77e1;
 }
