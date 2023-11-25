@@ -22,10 +22,6 @@ function generateFact(event) {
   factElement.classList.remove("hidden");
   factElement.innerHTML = `<div class="generating">Generating a fact for you about ${instructionsInput.value} ⏳</div>`;
 
-  console.log("Generating fact");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
-
   axios.get(apiUrl).then(displayFact);
 }
 
