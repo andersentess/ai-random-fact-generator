@@ -108,3 +108,9 @@ img {
     visibility: hidden;
   }
 }
+
+@media (max-width: 960px) {
+  .instructions {
+    font-size: 10px;
+  }
+}
