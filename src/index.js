@@ -18,6 +18,10 @@ function generateFact(event) {
     "You are random fact expert and love to share your knowledge with everyone. Your mission is to generate a short random fact in basic HTML. Make sure to follow the user instructions. Do not include a title to the Fact. Sign the fact with 'SheCodes AI' inside a <strong> element at the end of the fact and NOT at the beginning";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let factElement = document.querySelector("#fact");
+  factElement.classList.remove("hidden");
+  factElement.innerHTML = `<div class="generating">Generating a fact for you about ${instructionsInput.value} ⏳</div>`;
+
   console.log("Generating fact");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
