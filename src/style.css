@@ -35,7 +35,7 @@ form {
 footer,
 a {
   color: #8a77e1;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 img {
@@ -46,7 +46,7 @@ img {
 
 .container {
   margin: 40px auto;
-  max-width: 960px;
+  max-width: 800px;
 }
 
 .instructions {
